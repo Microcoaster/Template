@@ -12,7 +12,7 @@ Comme les autres modules, il se configure au premier démarrage par portail capt
 
 **Version [0.1.0]**
 
-## Principe
+<img src="docs/sections/s01.png" alt="01 Principe" width="100%">
 
 [Expliquer la logique, pas la liste des fonctions. Si le module a une machine à états, la montrer.]
 
@@ -22,25 +22,25 @@ ETAT_B       ce qui déclenche le passage ici
 ETAT_FAULT   ce qui l'a provoqué
 ```
 
-## Sécurité
+<img src="docs/sections/s02.png" alt="02 Sécurité" width="100%">
 
 [Ce qui arrive si la liaison tombe, si un capteur ment, si un ordre se perd. Quel est l'état sûr, et pourquoi c'est celui-là.]
 
 [Quelles bornes locales protègent le matériel : durée maximale, seuil de courant, délai de garde.]
 
-## Matériel
+<img src="docs/sections/s03.png" alt="03 Matériel" width="100%">
 
 | Élément | Broche | Rôle |
 |:--|:--|:--|
 | [Composant] | GPIO [n] | [Ce qu'il fait] |
 
-## Réglages
+<img src="docs/sections/s04.png" alt="04 Réglages" width="100%">
 
 | Paramètre | Effet |
 |:--|:--|
 | `[PARAMETRE_MS]` | [Ce que ça change quand on l'augmente ou le diminue] |
 
-## Compiler et téléverser
+<img src="docs/sections/s05.png" alt="05 Mise en service" width="100%">
 
 Nécessite [PlatformIO](https://platformio.org/) dans Visual Studio Code.
 
@@ -51,8 +51,6 @@ pio run -t uploadfs      # téléversement du portail vers LittleFS
 pio device monitor       # console série, 115200 bauds
 ```
 
-## Première mise en service
-
 1. Alimenter le module. Il crée un point d'accès WiFi.
 2. S'y connecter et ouvrir `http://192.168.4.1`.
 3. Renseigner le réseau de destination.
@@ -60,10 +58,18 @@ pio device monitor       # console série, 115200 bauds
 
 Les identifiants WiFi restent en mémoire du module, jamais dans le dépôt.
 
-## État
+<img src="docs/sections/s06.png" alt="06 Écosystème" width="100%">
 
 [Ce qui marche, ce qui reste à écrire. Être franc : un dépôt qui annonce plus qu'il ne fait finit par se retourner contre son auteur.]
 
+Le socle commun à tous les modules est le [WiFi Manager](https://github.com/Microcoaster/MicroCoaster_WifiManager), et le pilotage se fait depuis la [WebApp](https://github.com/Microcoaster/MicroCoasterWebApp).
+
 ---
 
-<sub>MicroCoaster · Auteurs : [AUTEURS]</sub>
+### Sur les bandeaux de section
+
+Les images de `docs/sections/` sont fournies en gris neutre. Pour un nouveau module, regénérez-les à la couleur d'accent choisie pour sa bannière, afin que le dépôt reste cohérent de haut en bas. Les six titres livrés couvrent le plan type ; retirez ceux qui ne servent pas plutôt que d'inventer des sections vides.
+
+---
+
+<sub>MicroCoaster · Auteur : [AUTEUR]</sub>
