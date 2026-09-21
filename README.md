@@ -16,8 +16,6 @@ Comme les autres modules, il se configure au premier démarrage par portail capt
 
 [Expliquer la logique, pas la liste des fonctions. Si le module a une machine à états, la montrer.]
 
-<img src="docs/blocs/01.png" alt="Terminal bash : compiler et téléverser" width="100%">
-
 ```
 ETAT_A       ce qui est vrai dans cet état
 ETAT_B       ce qui déclenche le passage ici
@@ -47,8 +45,6 @@ ETAT_FAULT   ce qui l'a provoqué
 <img src="docs/sections/s05.png" alt="05 Mise en service" width="100%">
 
 Nécessite [PlatformIO](https://platformio.org/) dans Visual Studio Code.
-
-<img src="docs/blocs/02.png" alt="Machine à états : plan type" width="100%">
 
 ```bash
 pio run                  # compilation
