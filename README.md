@@ -30,15 +30,17 @@ ETAT_FAULT   ce qui l'a provoqué
 
 <img src="docs/sections/s03.png" alt="03 Matériel" width="100%">
 
-| Élément | Broche | Rôle |
-|:--|:--|:--|
-| [Composant] | GPIO [n] | [Ce qu'il fait] |
+[Un schéma de brochage, pas un tableau : la carte au centre, ses broches réparties de part et d'autre, les sorties d'un côté et les entrées de l'autre. Le texte alternatif doit énumérer chaque broche et son rôle, puisque l'image ne se cherche pas au Ctrl+F.]
+
+`docs/schemas/brochage.png`
+
+[Sous le schéma, une phrase sur ce que le brochage ne dit pas : pourquoi ce composant, quel piège de câblage, ce qui casse si on intervertit deux lignes.]
 
 <img src="docs/sections/s04.png" alt="04 Réglages" width="100%">
 
-| Paramètre | Effet |
-|:--|:--|
-| `[PARAMETRE_MS]` | [Ce que ça change quand on l'augmente ou le diminue] |
+[Une grille de cartes, une par paramètre. Le nom en monospace, puis ce que ça change quand on l'augmente ou le diminue. Pas la valeur par défaut : elle est dans le code et s'y périmera moins vite.]
+
+`docs/schemas/reglages.png`
 
 <img src="docs/sections/s05.png" alt="05 Mise en service" width="100%">
 
@@ -66,9 +68,13 @@ Le socle commun à tous les modules est le [WiFi Manager](https://github.com/Mic
 
 ---
 
-### Sur les bandeaux de section
+### Sur les images
 
-Les images de `docs/sections/` sont fournies en gris neutre. Pour un nouveau module, regénérez-les à la couleur d'accent choisie pour sa bannière, afin que le dépôt reste cohérent de haut en bas. Les six titres livrés couvrent le plan type ; retirez ceux qui ne servent pas plutôt que d'inventer des sections vides.
+Les bandeaux de `docs/sections/` sont fournis en gris neutre. Pour un nouveau module, regénérez-les à la couleur d'accent choisie pour sa bannière, afin que le dépôt reste cohérent de haut en bas. Les six titres livrés couvrent le plan type ; retirez ceux qui ne servent pas plutôt que d'inventer des sections vides.
+
+`docs/schemas/` accueille les figures : machine à états, brochage, réglages, commandes. La règle suivie dans les autres modules est simple. Ce qui a un ordre devient une séquence de cartes reliées par des flèches. Ce qui n'en a pas devient une grille. Un brochage devient un schéma de carte. Un tableau Markdown ne subsiste nulle part.
+
+Chaque figure porte un texte alternatif qui énumère son contenu. C'est ce qui rend la page lisible à un lecteur d'écran, et retrouvable par une recherche dans la page, ce qu'une image ne permet pas.
 
 ---
 
