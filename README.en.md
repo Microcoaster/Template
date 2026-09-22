@@ -69,7 +69,7 @@ The WiFi credentials stay in the module's memory, never in the repository.
 
 [What works, what is still to be written. Be straight about it: a repository that promises more than it delivers ends up turning on its author.]
 
-The common base for every module is the [WiFi Manager](https://github.com/Microcoaster/MicroCoaster_WifiManager), and the driving is done from the [WebApp](https://github.com/Microcoaster/MicroCoasterWebApp).
+The common base for every module is the [WiFi Manager](https://github.com/Microcoaster/MicroCoaster_WifiManager/blob/main/README.en.md), and the driving is done from the [WebApp](https://github.com/Microcoaster/MicroCoasterWebApp/blob/main/README.en.md).
 
 ---
 
